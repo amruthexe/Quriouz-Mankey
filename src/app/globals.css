@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    overflow-x: hidden;
+}
+
+.shining-button {
+    background-color: #32cd32; /* Initial green color */
+    color:black;
+    font-weight: bolder;
+   
+    width: 14rem; /* Matches w-56 */
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(50, 205, 50, 0.8), 0 0 20px rgba(50, 205, 50, 0.6);
+    animation: shine 2s infinite;
+    border: white 10px;
+}
+.shining-buttons {
+    background-color: #32cd32; /* Initial green color */
+    color:black;
+   
+    width: 10rem; /* Matches w-56 */
+    text-align: center;
+    font-weight: bold;
+   
+    box-shadow: 0 0 10px rgba(50, 205, 50, 0.8), 0 0 20px rgba(50, 205, 50, 0.6);
+    animation: shine 2s infinite;
+}
+
+@keyframes shine {
+    0% {
+        box-shadow: 0 0 10px rgba(50, 205, 50, 0.8), 0 0 20px rgba(50, 205, 50, 0.6);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(50, 255, 50, 1), 0 0 30px rgba(50, 255, 50, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(50, 205, 50, 0.8), 0 0 20px rgba(50, 205, 50, 0.6);
+    }
+}
+
+
+
+@keyframes ring {
+    0% {
+      transform: scale(1);
+     
+    }
+    50% {
+      transform: scale(1.1);
+     
+    }
+    100% {
+      transform: scale(1);
+    
+    }
+  }
+  
+  .whatsapp-button {
+    animation: ring 1.5s infinite;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+   
+    
+   
+  }
+  
+  .whatsapp-button img {
+    width: 60px;
+    height: 60px;
+  }
+  
