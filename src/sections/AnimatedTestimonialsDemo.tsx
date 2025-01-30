@@ -38,7 +38,7 @@ export function AnimatedTestimonialsDemo() {
             src: "/t5.jpg",
         },{
             "quote": "The platform has revolutionized the way we deliver education. It's intuitive, scalable, and supports our rapid growth.",
-            "name": "Ananya Sharma",
+            "name": "Vivek",
             "designation": "Working at Tech Mahindra",
             "src": "/t6.png"
         }
